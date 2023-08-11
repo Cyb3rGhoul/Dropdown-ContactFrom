@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: rgb(204, 204, 204);
+}
+
+.general{
+    position: relative;
+    left: 25%;
+    margin-top: 2rem;
+    width: 50%;
+    height: 90%;
+}
+
+.button{
+    padding-top: 1rem;
+    position: absolute;
+    right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-group{
+    padding-top: 1rem;
+}
+
+.accordion{
+    max-width: 800px;
+    border: solid white 1px;
+    border-radius: 1rem;
+    background: white;
+
+}
+
+.accordion .content8x{
+    position: relative;
+    margin: 10px 20px;
+}
+
+.accordion .content8x .content .label{
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.accordion .content8x .form-heading .heading1::before{
+    content: '+';
+    position: absolute;
+    right: 5px;
+    transform: translate(-50%);
+    font-size: 1.5rem;
+}
+.accordion .content8x.active .form-heading .heading1::before{
+    content: '-';
+    font-size: 1.5rem;
+    position: absolute;
+    right: 5px;
+}
+
+.accordion .content8x .content{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.accordion .content8x.active .content{
+    height: 350px;
+    padding: 10px;
+}
+
+.accordion .content8x .content .form-group .col1 input{
+    width: 100%;
+}
+
+.accordion .content8x .content .form-group .col2 input{
+    width: 100%;
+}
+
+.accordion .content8x .content .form-group .col1{
+    width: 47%;
+}
+.accordion .content8x .content .form-group .col2{
+    width: 47%;
+}
+

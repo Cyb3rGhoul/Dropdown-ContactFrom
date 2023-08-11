@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="general">
+      <form>
+        <div class="accordion">
+          <div class="content8x">
+            <div class="form-heading">
+              <h3>Add new Staff</h3>
+              <hr
+                style="width: 100%; text-align: center; color: rgb(97, 97, 97)"
+              />
+              <div class="heading1" style="cursor: pointer; width: 100%">
+                <h5>1) General Details</h5>
+              </div>
+            </div>
+            <div class="content">
+              <div class="form-group">
+                <label class="label" for="exampleInputName1">Full Name</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputName1"
+                  aria-describedby="fullName"
+                  placeholder="Enter Full Name"
+                />
+              </div>
+              <div class="form-group">
+                <label class="label" for="exampleInputEmail1"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+              <div class="form-group">
+                <label class="label" for="exampleInputPassword1"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="button">
+                <button type="submit" class="btn btn-primary">Next ></button>
+              </div>
+            </div>
+          </div>
+          <div class="content8x">
+            <div class="form-heading">
+              <hr
+                style="width: 100%; text-align: center; color: rgb(97, 97, 97)"
+              />
+              <div class="heading1" style="cursor: pointer; width: 100%">
+                <h5>2) Company Details</h5>
+              </div>
+            </div>
+            <div class="content">
+              <div
+                class="form-group"
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  width: 100%;
+                  align-items: center;
+                  justify-content: space-between;
+                "
+              >
+                <div class="col1">
+                  <label class="label" for="exampleInputCompany"
+                    >Comapany name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputCompany"
+                    aria-describedby="companyName"
+                    placeholder=""
+                  />
+                </div>
+                <div class="col2">
+                  <label class="label" for="exampleInputCNJ">CJN</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputCJN"
+                    aria-describedby="CJN"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="label" for="exampleInputAccountNum"
+                  >Account Number</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputAccountNum"
+                  aria-describedby="accnum"
+                  placeholder="Account Number"
+                />
+              </div>
+              <div
+                class="form-group"
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  width: 100%;
+                  align-items: center;
+                  justify-content: space-between;
+                "
+              >
+                <div class="col1" style="width: 47%">
+                  <label class="label" for="exampleInputCompany"
+                    >ISPB</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputCompany"
+                    aria-describedby="companyName"
+                    placeholder=""
+                  />
+                </div>
+                <div class="col2" style="width: 47%">
+                  <label class="label" for="exampleInputCNJ">CompeeCode</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputCJN"
+                    aria-describedby="CJN"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="label" for="exampleInputIssuer"
+                  >Issuer</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputIssuer"
+                  aria-describedby="issue"
+                  placeholder=""
+                />
+              </div>
+              <div class="link" style="margin-top: 10px; font-weight: 700; font-size: 1rem;">
+                <a href="#"
+                ><small id="emailHelp" class="form-text text-muted"
+                >Add More Details ></small
+                ></a
+                >
+              </div>
+              <div class="button">
+                <button type="submit" class="btn btn-primary">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <script>
+      const accordion = document.getElementsByClassName("content8x");
+
+      for (i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+        });
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
